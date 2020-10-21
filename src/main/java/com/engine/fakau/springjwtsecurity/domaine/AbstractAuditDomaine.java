@@ -2,19 +2,17 @@ package com.engine.fakau.springjwtsecurity.domaine;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+@MappedSuperclass
 public class AbstractAuditDomaine implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name="ID")
     protected Long id;
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "CREATION_DATE")
     protected LocalDateTime creationDate;
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "UPDATE_DATE")
     protected LocalDateTime updateDate;
     @Column(name = "CREATION_USER")
@@ -60,5 +58,16 @@ public class AbstractAuditDomaine implements Serializable {
 
     public void setUpdateUser(String updateUser) {
         this.updateUser = updateUser;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractAuditDomaine{" +
+                "id=" + id +
+                ", creationDate=" + creationDate +
+                ", updateDate=" + updateDate +
+                ", creationUser='" + creationUser + '\'' +
+                ", updateUser='" + updateUser + '\'' +
+                '}';
     }
 }

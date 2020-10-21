@@ -37,4 +37,18 @@ public class User extends  AbstractAuditDomaine{
     public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", roles=" + roles +
+                ", id=" + id +
+                ", creationDate=" + creationDate +
+                ", updateDate=" + updateDate +
+                ", creationUser='" + creationUser + '\'' +
+                ", updateUser='" + updateUser + '\'' +
+                '}';
+    }
 }
