@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd47ed85-d781-4f12-884d-1044c9418aca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/SpringJwtSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/SpringJwtSecurityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/AbstractAuditDomaine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/AbstractAuditDomaine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/engine/fakau/springjwtsecurity/SpringJwtSecurityApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603254706125</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add sec config">
+      <created>1603260356392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603260356392</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +163,8 @@
     <MESSAGE value="add sercice implementation" />
     <MESSAGE value="add new methode" />
     <MESSAGE value="update interface service" />
-    <option name="LAST_COMMIT_MESSAGE" value="update interface service" />
+    <MESSAGE value="add sec config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sec config" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="67" width="1099" height="793" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603256869001">
