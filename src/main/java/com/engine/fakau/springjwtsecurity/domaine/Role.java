@@ -18,4 +18,16 @@ public class Role extends  AbstractAuditDomaine{
     public void setNomRole(String nomRole) {
         this.nomRole = nomRole;
     }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "nomRole='" + nomRole + '\'' +
+                ", id=" + id +
+                ", creationDate=" + creationDate +
+                ", updateDate=" + updateDate +
+                ", creationUser='" + creationUser + '\'' +
+                ", updateUser='" + updateUser + '\'' +
+                '}';
+    }
 }

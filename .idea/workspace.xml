@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd47ed85-d781-4f12-884d-1044c9418aca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/ContactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="spring-jwt-security-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/spring-jwt-security-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.spring-jwt-security-0.0.1-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603250067412</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update interface service">
+      <created>1603254706125</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603254706125</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add sec config">
+      <created>1603260356392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603260356392</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,17 +162,39 @@
     <MESSAGE value="add sercice" />
     <MESSAGE value="add sercice implementation" />
     <MESSAGE value="add new methode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new methode" />
+    <MESSAGE value="update interface service" />
+    <MESSAGE value="add sec config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sec config" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1603254637713">
+    <state x="250" y="67" width="1099" height="793" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603256869001">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603254637713" />
-    <state x="292" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603250155147">
+    <state x="250" y="67" width="1099" height="793" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1603256869001" />
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1603257506395">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1603250155147" />
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603257506395" />
+    <state width="1545" height="338" key="GridCell.Tab.0.bottom" timestamp="1603255859479">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="338" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603255859479" />
+    <state width="1545" height="338" key="GridCell.Tab.0.center" timestamp="1603255859479">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="338" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603255859479" />
+    <state width="1545" height="338" key="GridCell.Tab.0.left" timestamp="1603255859479">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="338" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603255859479" />
+    <state width="1545" height="338" key="GridCell.Tab.0.right" timestamp="1603255859479">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="338" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603255859479" />
+    <state x="292" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603254864446">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1603254864446" />
     <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1603253988588">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

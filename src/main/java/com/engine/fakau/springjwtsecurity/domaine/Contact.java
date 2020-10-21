@@ -37,4 +37,18 @@ public class Contact extends  AbstractAuditDomaine{
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "nom='" + nom + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", email='" + email + '\'' +
+                ", id=" + id +
+                ", creationDate=" + creationDate +
+                ", updateDate=" + updateDate +
+                ", creationUser='" + creationUser + '\'' +
+                ", updateUser='" + updateUser + '\'' +
+                '}';
+    }
 }
