@@ -15,7 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser("kafka")
                 .password("kafka")
-                .roles("Admin", "User");
+                .roles("ADMIN", "USER");
     }
 
     @Override
@@ -24,6 +24,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.formLogin();
         http.authorizeRequests()
                 .anyRequest()
-                .permitAll();
+                .authenticated();
     }
 }
