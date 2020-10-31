@@ -1,4 +1,4 @@
-package com.engine.fakau.springjwtsecurity.serviceImpl;
+package com.engine.fakau.springjwtsecurity.sercice.serviceImpl;
 
 import com.engine.fakau.springjwtsecurity.domaine.Contact;
 import com.engine.fakau.springjwtsecurity.exception.BadRequestException;
