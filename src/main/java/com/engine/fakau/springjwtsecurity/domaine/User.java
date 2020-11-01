@@ -13,6 +13,8 @@ public class User extends  AbstractAuditDomaine{
     private  String password;
     @Column(name = "email", nullable = false)
     private String email;
+    @Column(name = "enable", nullable = false)
+    private boolean enabled;
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles = new ArrayList<>();
 
@@ -40,6 +42,14 @@ public class User extends  AbstractAuditDomaine{
         this.email = email;
     }
 
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
     public List<Role> getRoles() {
         return roles;
     }
@@ -54,6 +64,7 @@ public class User extends  AbstractAuditDomaine{
                 "login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
+                ", enabled=" + enabled +
                 ", roles=" + roles +
                 ", id=" + id +
                 ", creationDate=" + creationDate +

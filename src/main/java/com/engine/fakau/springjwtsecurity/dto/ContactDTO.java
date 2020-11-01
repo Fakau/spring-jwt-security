@@ -1,15 +1,14 @@
 package com.engine.fakau.springjwtsecurity.dto;
 
-import javax.validation.constraints.Email;
 
 public class ContactDTO extends AbstractAuditDomaineDTO {
-    @NotNull(message = "Nom must not be null")
+    // @NotNull(message = "Nom must not be null")
     private String nom;
-    @NotNull(message = "Telephone must not be null")
+    // @NotNull(message = "Telephone must not be null")
     private String telephone;
-    @NotNull(message = "Email must not be null")
-    @NotBlank(message = "Email must not be blank")
-    @Email(message = "Email invalid")
+    // @NotNull(message = "Email must not be null")
+    // @NotBlank(message = "Email must not be blank")
+    //@Email(message = "Email invalid")
     private String email;
 
     public String getNom() {

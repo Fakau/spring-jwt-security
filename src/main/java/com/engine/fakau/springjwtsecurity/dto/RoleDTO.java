@@ -1,7 +1,7 @@
 package com.engine.fakau.springjwtsecurity.dto;
 
 public class RoleDTO  extends AbstractAuditDomaineDTO{
-    @NotNull(message = "NomRole must not be null")
+    // @NotNull(message = "NomRole must not be null")
     private String nomRole;
 
     public String getNomRole() {

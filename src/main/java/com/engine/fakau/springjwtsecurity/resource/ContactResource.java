@@ -3,6 +3,7 @@ package com.engine.fakau.springjwtsecurity.resource;
 import com.engine.fakau.springjwtsecurity.domaine.Contact;
 import com.engine.fakau.springjwtsecurity.dto.ContactDTO;
 import com.engine.fakau.springjwtsecurity.sercice.ContactService;
+import com.engine.fakau.springjwtsecurity.sercice.serviceImpl.ContactServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,9 +11,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class ContactResource {
-    private final ContactService contactService;
+    private final ContactServiceImpl contactService;
 
-    public ContactResource(ContactService contactService){
+    public ContactResource(ContactServiceImpl contactService){
         this.contactService = contactService;
     }
     @PostMapping("/contact")
