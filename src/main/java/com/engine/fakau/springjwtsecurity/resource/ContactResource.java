@@ -1,6 +1,7 @@
 package com.engine.fakau.springjwtsecurity.resource;
 
 import com.engine.fakau.springjwtsecurity.domaine.Contact;
+import com.engine.fakau.springjwtsecurity.dto.ContactDTO;
 import com.engine.fakau.springjwtsecurity.sercice.ContactService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,15 +16,15 @@ public class ContactResource {
         this.contactService = contactService;
     }
     @PostMapping("/contact")
-    public Contact create(@RequestBody Contact contact){
+    public ContactDTO create(@RequestBody ContactDTO contact){
         return contactService.create(contact);
     }
     @PutMapping("/contact")
-    public Contact update(@RequestBody Contact contact){
+    public ContactDTO update(@RequestBody ContactDTO contact){
         return contactService.update(contact);
     }
     @GetMapping("/contact")
-    public List<Contact> getAll(){
+    public List<ContactDTO> getAll(){
         return contactService.getAll();
     }
     @DeleteMapping("/contact")

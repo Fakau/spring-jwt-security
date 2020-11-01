@@ -20,14 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd47ed85-d781-4f12-884d-1044c9418aca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/exception/UserAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/AbstractAuditDomaineDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/ContactDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/exception/EmailAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/ContactMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/IMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/RoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/serviceImpl/ContactServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/ContactServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/serviceImpl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/ContactServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/ContactServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603369372871</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add, UserDTO">
+      <created>1604186339541</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604186339541</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,17 +194,18 @@
     <MESSAGE value="add sec config" />
     <MESSAGE value="add jwt dependency" />
     <MESSAGE value="add user in memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user in memory" />
+    <MESSAGE value="add, UserDTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="add, UserDTO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603331244675">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1603331244675" />
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1603257506395">
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1604188505536">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603257506395" />
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1604188505536" />
     <state x="526" y="125" key="FileChooserDialogImpl" timestamp="1603559477911">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -212,6 +226,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1545" height="338" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603255859479" />
+    <state x="214" y="0" key="Maven.ArtifactSearchDialog" timestamp="1604188079184">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="214" y="0" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1604188079184" />
     <state x="292" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603369919501">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

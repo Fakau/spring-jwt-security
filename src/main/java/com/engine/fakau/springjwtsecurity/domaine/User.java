@@ -11,6 +11,8 @@ public class User extends  AbstractAuditDomaine{
     private  String login;
     @Column(name = "password", nullable = false)
     private  String password;
+    @Column(name = "email", nullable = false)
+    private String email;
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles = new ArrayList<>();
 
@@ -30,6 +32,14 @@ public class User extends  AbstractAuditDomaine{
         this.password = password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public List<Role> getRoles() {
         return roles;
     }
@@ -43,6 +53,7 @@ public class User extends  AbstractAuditDomaine{
         return "User{" +
                 "login='" + login + '\'' +
                 ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 ", roles=" + roles +
                 ", id=" + id +
                 ", creationDate=" + creationDate +

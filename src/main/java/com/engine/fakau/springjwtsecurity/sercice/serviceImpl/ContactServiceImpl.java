@@ -1,14 +1,17 @@
 package com.engine.fakau.springjwtsecurity.sercice.serviceImpl;
 
 import com.engine.fakau.springjwtsecurity.domaine.Contact;
+import com.engine.fakau.springjwtsecurity.dto.ContactDTO;
 import com.engine.fakau.springjwtsecurity.exception.BadRequestException;
 import com.engine.fakau.springjwtsecurity.repository.ContactRepository;
 import com.engine.fakau.springjwtsecurity.sercice.ContactService;
+import com.engine.fakau.springjwtsecurity.sercice.mapper.ContactMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -16,17 +19,22 @@ public class ContactServiceImpl implements ContactService {
     @Autowired
     private ContactRepository contactRepository;
 
-    public Contact create(Contact contact){
+    @Autowired
+    private ContactMapper contactMapper;
+
+    public ContactDTO create(ContactDTO dto){
+        Contact contact = contactMapper.toEntity(dto);
         if(contact.getId() != null){
            throw new BadRequestException("Cannot create contact with id != null");
         }
-        return contactRepository.save(contact);
+        return contactMapper.toDTO(contactRepository.save(contact));
     }
-    public Contact update(Contact contact){
+    public ContactDTO update(ContactDTO dto){
+        Contact contact = contactMapper.toEntity(dto);
         if(contact.getId() == null){
            throw new BadRequestException("Cannot update contact with id null");
         }
-        return contactRepository.save(contact);
+        return contactMapper.toDTO(contactRepository.save(contact));
     }
     public void delete(final Long id){
         if(id == null){
@@ -34,8 +42,11 @@ public class ContactServiceImpl implements ContactService {
         }
         contactRepository.deleteById(id);
     }
-    public List<Contact> getAll(){
-        return contactRepository.findAll();
+    public List<ContactDTO> getAll(){
+        return contactRepository.findAll()
+                .stream()
+                .map(contactMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
 }

@@ -5,8 +5,13 @@ import com.engine.fakau.springjwtsecurity.domaine.Role;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDTO extends AbstractAuditDomaine {
+public class UserDTO extends AbstractAuditDomaineDTO {
+    @NotNull(message = "Password must not be null")
     private  String login;
+    @NotNull(message = "Password must not be null")
+    @NotBlank(message = "Password must not be blank")
+    @Email(message = "Invalid email format")
+    private  String email;
     private List<Role> roles = new ArrayList<>();
 
     @Override
