@@ -1,7 +1,6 @@
 package com.engine.fakau.springjwtsecurity.sercice;
 
-import com.engine.fakau.springjwtsecurity.domaine.Contact;
-import com.engine.fakau.springjwtsecurity.dto.ContactDTO;
+import com.engine.fakau.springjwtsecurity.sercice.dto.ContactDTO;
 
 import java.util.List;
 

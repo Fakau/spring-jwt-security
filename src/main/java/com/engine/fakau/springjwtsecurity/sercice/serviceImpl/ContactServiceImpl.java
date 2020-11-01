@@ -1,7 +1,7 @@
 package com.engine.fakau.springjwtsecurity.sercice.serviceImpl;
 
 import com.engine.fakau.springjwtsecurity.domaine.Contact;
-import com.engine.fakau.springjwtsecurity.dto.ContactDTO;
+import com.engine.fakau.springjwtsecurity.sercice.dto.ContactDTO;
 import com.engine.fakau.springjwtsecurity.exception.BadRequestException;
 import com.engine.fakau.springjwtsecurity.repository.ContactRepository;
 import com.engine.fakau.springjwtsecurity.sercice.ContactService;

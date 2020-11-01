@@ -1,4 +1,4 @@
-package com.engine.fakau.springjwtsecurity.dto;
+package com.engine.fakau.springjwtsecurity.sercice.dto;
 
 
 public class ContactDTO extends AbstractAuditDomaineDTO {

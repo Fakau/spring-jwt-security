@@ -1,8 +1,6 @@
 package com.engine.fakau.springjwtsecurity.resource;
 
-import com.engine.fakau.springjwtsecurity.domaine.Contact;
-import com.engine.fakau.springjwtsecurity.dto.ContactDTO;
-import com.engine.fakau.springjwtsecurity.sercice.ContactService;
+import com.engine.fakau.springjwtsecurity.sercice.dto.ContactDTO;
 import com.engine.fakau.springjwtsecurity.sercice.serviceImpl.ContactServiceImpl;
 import org.springframework.web.bind.annotation.*;
 

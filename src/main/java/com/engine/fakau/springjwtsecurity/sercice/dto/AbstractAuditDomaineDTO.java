@@ -1,4 +1,4 @@
-package com.engine.fakau.springjwtsecurity.dto;
+package com.engine.fakau.springjwtsecurity.sercice.dto;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 

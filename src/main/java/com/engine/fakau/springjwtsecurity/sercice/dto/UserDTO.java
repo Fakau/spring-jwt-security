@@ -1,6 +1,5 @@
-package com.engine.fakau.springjwtsecurity.dto;
+package com.engine.fakau.springjwtsecurity.sercice.dto;
 
-import com.engine.fakau.springjwtsecurity.domaine.AbstractAuditDomaine;
 import com.engine.fakau.springjwtsecurity.domaine.Role;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,7 @@ public class UserDTO extends AbstractAuditDomaineDTO {
     //@Email(message = "Invalid email format")
     private  String email;
     private boolean enabled;
-    private List<Role> roles = new ArrayList<>();
+    private List<RoleDTO> roleDTOs = new ArrayList<>();
 
     public String getLogin() {
         return login;
@@ -39,12 +38,12 @@ public class UserDTO extends AbstractAuditDomaineDTO {
         this.enabled = enabled;
     }
 
-    public List<Role> getRoles() {
-        return roles;
+    public List<RoleDTO> getRoleDTOs() {
+        return roleDTOs;
     }
 
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
+    public void setRoleDTOs(List<RoleDTO> roleDTOs) {
+        this.roleDTOs = roleDTOs;
     }
 
     @Override
@@ -53,7 +52,7 @@ public class UserDTO extends AbstractAuditDomaineDTO {
                 "login='" + login + '\'' +
                 ", email='" + email + '\'' +
                 ", enabled=" + enabled +
-                ", roles=" + roles +
+                ", roleDTOs=" + roleDTOs +
                 ", id=" + id +
                 ", creationDate=" + creationDate +
                 ", updateDate=" + updateDate +
