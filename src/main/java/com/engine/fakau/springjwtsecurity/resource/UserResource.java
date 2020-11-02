@@ -25,12 +25,12 @@ public class UserResource {
         httpHeaders.add("Authorization", jwtResponse.getToken());
         return ResponseEntity.ok(jwtResponse);
     }
-    @GetMapping("/users")
+    @GetMapping("/user")
     public ResponseEntity<List<UserDTO>> getAll() {
         HttpHeaders httpHeaders = new HttpHeaders();
         return ResponseEntity.ok(userService.getAll());
     }
-    @GetMapping("/users/find-by-login")
+    @GetMapping("/user/find-by-login")
     public ResponseEntity<Optional<UserDTO>> getAll(@RequestParam("login") String login ) {
         HttpHeaders httpHeaders = new HttpHeaders();
         return ResponseEntity.ok(userService.findOneByLogin(login));

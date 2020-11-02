@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -84,12 +85,15 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
     @Override
     public void delete(Long id) {
-
+        userRepository.deleteById(id);
     }
 
     @Override
     public List<UserDTO> getAll() {
-        return null;
+        return userRepository.findAll()
+                .stream()
+                .map(userMapper::toDTO)
+                .collect(Collectors.toList());
     }
     private void authenticate(String username, String password) throws Exception {
         try {
