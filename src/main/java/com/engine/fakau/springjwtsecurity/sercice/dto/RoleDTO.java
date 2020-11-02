@@ -1,14 +1,16 @@
 package com.engine.fakau.springjwtsecurity.sercice.dto;
 
+import com.engine.fakau.springjwtsecurity.domaine.enumeation.NomRole;
+
 public class RoleDTO  extends AbstractAuditDomaineDTO{
     // @NotNull(message = "NomRole must not be null")
-    private String nomRole;
+    private NomRole nomRole;
 
-    public String getNomRole() {
+    public NomRole getNomRole() {
         return nomRole;
     }
 
-    public void setNomRole(String nomRole) {
+    public void setNomRole(NomRole nomRole) {
         this.nomRole = nomRole;
     }
 

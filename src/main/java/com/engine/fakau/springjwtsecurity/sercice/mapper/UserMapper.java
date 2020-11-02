@@ -1,7 +1,6 @@
 package com.engine.fakau.springjwtsecurity.sercice.mapper;
 
 import com.engine.fakau.springjwtsecurity.domaine.User;
-import com.engine.fakau.springjwtsecurity.sercice.dto.RoleDTO;
 import com.engine.fakau.springjwtsecurity.sercice.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +20,7 @@ public class UserMapper implements IMapper<User, UserDTO> {
         user.setCreationDate(userDTO.getCreationDate());
         user.setUpdateUser(userDTO.getUpdateUser());
         user.setLogin(userDTO.getLogin());
+        user.setPassword(userDTO.getPassword());
         user.setEmail(userDTO.getEmail());
         user.setEnabled(userDTO.isEnabled());
         user.setRoles(userDTO.getRoleDTOs()

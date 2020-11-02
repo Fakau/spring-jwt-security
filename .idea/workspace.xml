@@ -20,17 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd47ed85-d781-4f12-884d-1044c9418aca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/enumeation/NomRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/AbstractAuditDomaineDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/AbstractAuditDomaineDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/ContactDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/ContactDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/RoleDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/ContactResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/ContactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/ContactMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/ContactMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jwt-security.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jwt-security.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/BeanConfigiration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/BeanConfigiration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/domaine/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/JwtAuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/security/jwt/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/security/jwt/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/JwtUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/RoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/ContactServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/ContactServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -163,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604235714830</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ajust user mapper">
+      <created>1604237528630</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604237528630</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,17 +228,22 @@
     <MESSAGE value="add, UserDTO" />
     <MESSAGE value="add, add mapper" />
     <MESSAGE value="get the jwt from default user" />
-    <option name="LAST_COMMIT_MESSAGE" value="get the jwt from default user" />
+    <MESSAGE value="ajust user mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajust user mapper" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603331244675">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1603331244675" />
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1604237239645">
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1604316673059">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1604237239645" />
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1604316673059" />
+    <state x="464" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604238990230">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="464" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1604238990230" />
     <state x="526" y="125" key="FileChooserDialogImpl" timestamp="1603559477911">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

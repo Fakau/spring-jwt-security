@@ -7,6 +7,7 @@ import java.util.List;
 public class UserDTO extends AbstractAuditDomaineDTO {
     //@NotNull(message = "Password must not be null")
     private  String login;
+    private  String password;
     //@NotNull(message = "Password must not be null")
     //@NotBlank(message = "Password must not be blank")
     //@Email(message = "Invalid email format")
@@ -44,6 +45,14 @@ public class UserDTO extends AbstractAuditDomaineDTO {
 
     public void setRoleDTOs(List<RoleDTO> roleDTOs) {
         this.roleDTOs = roleDTOs;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

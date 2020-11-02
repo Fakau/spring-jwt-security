@@ -1,6 +1,5 @@
 package com.engine.fakau.springjwtsecurity.sercice.mapper;
 
-import com.engine.fakau.springjwtsecurity.domaine.Contact;
 import com.engine.fakau.springjwtsecurity.domaine.Role;
 import com.engine.fakau.springjwtsecurity.sercice.dto.RoleDTO;
 import org.springframework.stereotype.Service;

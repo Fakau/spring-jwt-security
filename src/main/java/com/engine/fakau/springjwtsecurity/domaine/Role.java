@@ -1,7 +1,10 @@
 package com.engine.fakau.springjwtsecurity.domaine;
 
+import com.engine.fakau.springjwtsecurity.domaine.enumeation.NomRole;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.Table;
 
 @Entity
@@ -9,13 +12,14 @@ import javax.persistence.Table;
 public class Role extends  AbstractAuditDomaine{
 
     @Column(name = "nom_role", nullable = false)
-    private String nomRole;
+    @Enumerated
+    private NomRole nomRole;
 
-    public String getNomRole() {
+    public NomRole getNomRole() {
         return nomRole;
     }
 
-    public void setNomRole(String nomRole) {
+    public void setNomRole(NomRole nomRole) {
         this.nomRole = nomRole;
     }
 
