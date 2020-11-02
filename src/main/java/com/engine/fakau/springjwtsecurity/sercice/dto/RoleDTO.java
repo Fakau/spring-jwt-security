@@ -1,18 +1,11 @@
-package com.engine.fakau.springjwtsecurity.domaine;
+package com.engine.fakau.springjwtsecurity.sercice.dto;
 
 import com.engine.fakau.springjwtsecurity.domaine.enumeation.NomRole;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Enumerated;
-import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
-@Entity
-@Table(name = "role")
-public class Role extends  AbstractAuditDomaine{
-
-    @Column(name = "nom_role", nullable = false)
-    @Enumerated
+public class RoleDTO  extends AbstractAuditDomaineDTO{
+    @NotNull(message = "NomRole must not be null")
     private NomRole nomRole;
 
     public NomRole getNomRole() {
@@ -25,7 +18,7 @@ public class Role extends  AbstractAuditDomaine{
 
     @Override
     public String toString() {
-        return "Role{" +
+        return "RoleDTO{" +
                 "nomRole='" + nomRole + '\'' +
                 ", id=" + id +
                 ", creationDate=" + creationDate +

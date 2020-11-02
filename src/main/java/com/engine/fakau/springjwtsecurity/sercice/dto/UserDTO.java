@@ -1,22 +1,18 @@
-package com.engine.fakau.springjwtsecurity.domaine;
-
-import javax.persistence.*;
+package com.engine.fakau.springjwtsecurity.sercice.dto;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name = "user")
-public class User extends  AbstractAuditDomaine{
-    @Column(name = "login", nullable = false)
+public class UserDTO extends AbstractAuditDomaineDTO {
+    @NotNull(message = "login must not be null")
     private  String login;
-    @Column(name = "password", nullable = false)
     private  String password;
-    @Column(name = "email", nullable = false)
-    private String email;
-    @Column(name = "enable", nullable = false)
+    @Email(message = "Invalid email format")
+    private  String email;
     private boolean enabled;
-    @ManyToMany(fetch = FetchType.EAGER)
-    private List<Role> roles = new ArrayList<>();
+    private List<RoleDTO> roleDTOs = new ArrayList<>();
 
     public String getLogin() {
         return login;
@@ -24,14 +20,6 @@ public class User extends  AbstractAuditDomaine{
 
     public void setLogin(String login) {
         this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getEmail() {
@@ -50,22 +38,30 @@ public class User extends  AbstractAuditDomaine{
         this.enabled = enabled;
     }
 
-    public List<Role> getRoles() {
-        return roles;
+    public List<RoleDTO> getRoleDTOs() {
+        return roleDTOs;
     }
 
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
+    public void setRoleDTOs(List<RoleDTO> roleDTOs) {
+        this.roleDTOs = roleDTOs;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserDTO{" +
                 "login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", enabled=" + enabled +
-                ", roles=" + roles +
+                ", roleDTOs=" + roleDTOs +
                 ", id=" + id +
                 ", creationDate=" + creationDate +
                 ", updateDate=" + updateDate +

@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dd47ed85-d781-4f12-884d-1044c9418aca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jwt-security.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jwt-security.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/resource/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/engine/fakau/springjwtsecurity/sercice/serviceImpl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -127,7 +129,63 @@
       <option name="project" value="LOCAL" />
       <updated>1603284116817</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add user in memory">
+      <created>1603369372871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603369372871</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add, UserDTO">
+      <created>1604186339541</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604186339541</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add, add mapper">
+      <created>1604189078672</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604189078672</updated>
+    </task>
+    <task id="LOCAL-00012" summary="get the jwt from default user">
+      <created>1604235714830</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604235714830</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajust user mapper">
+      <created>1604237528630</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604237528630</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add swagger">
+      <created>1604321060614</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604321060614</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add swagger">
+      <created>1604332718185</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604332718185</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add swagger">
+      <created>1604332729569</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604332729569</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,21 +226,31 @@
     <MESSAGE value="update interface service" />
     <MESSAGE value="add sec config" />
     <MESSAGE value="add jwt dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="add jwt dependency" />
+    <MESSAGE value="add user in memory" />
+    <MESSAGE value="add, UserDTO" />
+    <MESSAGE value="add, add mapper" />
+    <MESSAGE value="get the jwt from default user" />
+    <MESSAGE value="ajust user mapper" />
+    <MESSAGE value="add swagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="add swagger" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603331244675">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1603331244675" />
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1603257506395">
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser" timestamp="1604328973843">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603257506395" />
-    <state x="526" y="125" key="FileChooserDialogImpl" timestamp="1603331232935">
+    <state x="558" y="36" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1604328973843" />
+    <state x="464" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604238990230">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="526" y="125" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603331232935" />
+    <state x="464" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1604238990230" />
+    <state x="526" y="125" key="FileChooserDialogImpl" timestamp="1603559477911">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="526" y="125" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603559477911" />
     <state width="1545" height="338" key="GridCell.Tab.0.bottom" timestamp="1603255859479">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -199,10 +267,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1545" height="338" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603255859479" />
-    <state x="292" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603284187158">
+    <state x="214" y="0" key="Maven.ArtifactSearchDialog" timestamp="1604188079184">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1603284187158" />
+    <state x="214" y="0" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1604188079184" />
+    <state x="292" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603369919501">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1603369919501" />
+    <state x="445" y="98" width="710" height="664" key="find.popup" timestamp="1604332609300">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="445" y="98" width="710" height="664" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1604332609300" />
     <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1603253988588">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
