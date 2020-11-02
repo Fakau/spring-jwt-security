@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd47ed85-d781-4f12-884d-1044c9418aca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604333353243</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Done!!!">
+      <created>1604333654004</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604333654004</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +245,8 @@
     <MESSAGE value="ajust user mapper" />
     <MESSAGE value="add swagger" />
     <MESSAGE value="Done!!!1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done!!!1" />
+    <MESSAGE value="Done!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="0" width="1099" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603331244675">
