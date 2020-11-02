@@ -5,6 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -12,6 +13,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Component
 public class JwtTokenUtil implements Serializable {
@@ -50,6 +52,8 @@ public class JwtTokenUtil implements Serializable {
     //generate token for user
     public String generateToken(User user) {
         Map<String, Object> claims = new HashMap<>();
+        claims.put("role", user.getRoles().stream().map(item -> item.getNomRole()).collect(Collectors.toList()));
+        claims.put("email", user.getEmail());
         return doGenerateToken(claims, user.getLogin());
     }
 
@@ -59,15 +63,14 @@ public class JwtTokenUtil implements Serializable {
     //3. According to JWS Compact Serialization(https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41#section-3.1)
     //   compaction of the JWT to a URL-safe string
     private String doGenerateToken(Map<String, Object> claims, String subject) {
-
         return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000))
                 .signWith(SignatureAlgorithm.HS512, secret).compact();
     }
 
     //validate token
-    public Boolean validateToken(String token, User user) {
+    public Boolean validateToken(String token, UserDetails user) {
         final String login = getLogin(token);
-        return (login.equals(user.getLogin()) && !isTokenExpired(token));
+        return (login.equals(user.getUsername()) && !isTokenExpired(token));
     }
 }

@@ -5,9 +5,12 @@ import com.engine.fakau.springjwtsecurity.domaine.enumeation.NomRole;
 import com.engine.fakau.springjwtsecurity.exception.UserNotFoundException;
 import com.engine.fakau.springjwtsecurity.repository.UserRepository;
 import com.engine.fakau.springjwtsecurity.sercice.serviceImpl.UserServiceImpl;
-import io.jsonwebtoken.ExpiredJwtException;
+import com.google.common.base.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -34,46 +37,26 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
-
-        final String requestTokenHeader = request.getHeader("Authorization");
-
-        String username = null;
-        String jwtToken = null;
-        // JWT Token is in the form "Bearer token". Remove Bearer word and get
-        // only the Token
-        if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
-            jwtToken = requestTokenHeader.substring(7);
-            try {
-                username = jwtTokenUtil.getLogin(jwtToken);
-            } catch (IllegalArgumentException e) {
-                System.out.println("Unable to get JWT Token");
-            } catch (ExpiredJwtException e) {
-                System.out.println("JWT Token has expired");
-            }
-        } else {
-            logger.warn("JWT Token does not begin with Bearer String");
-        }
-
-        // Once we get the token validate it.
-        if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-
-            User user = userRepository.findOneByLogin(username)
-                    .orElseThrow(() -> new UserNotFoundException("User Not found"));
-
-            // if token is valid configure Spring Security to manually set
-            // authentication
-            if (jwtTokenUtil.validateToken(jwtToken, user)) {
-                List<NomRole> roles = user.getRoles().stream().map(item -> item.getNomRole()).collect(Collectors.toList());
-               // UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
-               //         user, null,roles);
-               // usernamePasswordAuthenticationToken
-                //        .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
-                // After setting the Authentication in the context, we specify
-                // that the current user is authenticated. So it passes the
-                // Spring Security Configurations successfully.
-                //SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-            }
-        }
+          try {
+              final String requestTokenHeader = request.getHeader("Authorization");
+              String login = null;
+              String jwtToken = null;
+              if (!Strings.isNullOrEmpty(requestTokenHeader) || requestTokenHeader.startsWith("Bearer ")) {
+                  jwtToken = requestTokenHeader.replace("Bearer ", "");
+                  login = jwtTokenUtil.getLogin(jwtToken);
+              }
+              if (login != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+                  UserDetails userDetails = this.userService.loadUserByUsername(login);
+                  if (jwtTokenUtil.validateToken(jwtToken, userDetails)) {
+                      UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
+                              new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+                      usernamePasswordAuthenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                      SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+                  }
+              }
+          }catch (Exception ex){
+              System.out.println("One error where found :"+ex.getMessage());
+          }
         chain.doFilter(request, response);
     }
 

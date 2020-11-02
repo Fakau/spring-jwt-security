@@ -2,8 +2,10 @@ package com.engine.fakau.springjwtsecurity.sercice.dto;
 
 import com.engine.fakau.springjwtsecurity.domaine.enumeation.NomRole;
 
+import javax.validation.constraints.NotNull;
+
 public class RoleDTO  extends AbstractAuditDomaineDTO{
-    // @NotNull(message = "NomRole must not be null")
+    @NotNull(message = "NomRole must not be null")
     private NomRole nomRole;
 
     public NomRole getNomRole() {

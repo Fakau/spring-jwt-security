@@ -38,6 +38,7 @@ public class UserMapper implements IMapper<User, UserDTO> {
         userDTO.setCreationDate(user.getCreationDate());
         userDTO.setUpdateUser(user.getUpdateUser());
         userDTO.setLogin(user.getLogin());
+        //NERVER SEND THE PASSWORD TO THE CLIENT userDTO.setPassword(user.getPassword());
         userDTO.setEmail(user.getEmail());
         userDTO.setEnabled(user.isEnabled());
         userDTO.setRoleDTOs(user.getRoles()

@@ -60,6 +60,7 @@ public class BeanConfigiration {
         user.setEnabled(true);
         user.setCreationDate(LocalDateTime.now());
         user.setCreationUser("System");
-        userService.create(user);
-    }
+        System.out.println(userService.create(user));
+     }
+
 }

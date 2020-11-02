@@ -27,7 +27,7 @@ public class ContactResource {
         return contactService.getAll();
     }
     @DeleteMapping("/contact")
-    public void delete(final Long id){
+    public void delete(@RequestParam("id") final Long id){
         contactService.delete(id);
     }
 
