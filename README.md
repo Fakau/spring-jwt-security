@@ -13,7 +13,7 @@ See the swagger for more
 http://localhost:8080/swagger-ui.html#/
 
 ## References
-https://jwt.io/
-https://swagger.io/specification/v2/
-https://docs.spring.io/
-https://www.javainuse.com/spring/boot-jwt
+- https://jwt.io/
+- https://swagger.io/specification/v2/
+- https://docs.spring.io/
+- https://www.javainuse.com/spring/boot-jwt
